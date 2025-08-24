@@ -9,7 +9,7 @@ const font =Inter({
 })
 
 export const metadata: Metadata = {
-  title: "ALZAYAN PORTFOLIO",
+  title: "AL ZAYAN ",
   description: "Full Stack Developer | Mern | Django",
 };
 
