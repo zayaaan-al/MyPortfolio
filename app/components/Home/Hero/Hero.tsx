@@ -28,26 +28,32 @@ const Hero = () => {
             href="https://github.com/zayaaan-al"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub profile"
             className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 text-2xl"
           >
             <FaGithub />
           </a>
+
           <a
             href="https://www.linkedin.com/in/zayaaan-al/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
             className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 text-2xl"
           >
             <FaLinkedin />
           </a>
+
           <a
             href="https://www.instagram.com/zayaaan.al/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Instagram profile"
             className="text-gray-300 hover:text-cyan-400 transition-colors duration-300 text-2xl"
           >
             <FaInstagram />
           </a>
+
         </div>
 
         {/* Heading */}
