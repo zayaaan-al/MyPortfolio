@@ -3,11 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ParticlesHero from "../Hero/PartcleBackground";
 
 const AboutMe: React.FC = () => {
   return (
     <section className="relative py-20 ">
-    
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
