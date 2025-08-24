@@ -1,123 +1,139 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+
+const projects = [
+  {
+    id: 1,
+    title: "Modern Finance Dashboard UI",
+    category: "Apps, UI/UX",
+    img: "/images/p1.jpg",
+    link: "",
+  },
+  {
+    id: 2,
+    title: "E-Commerce Website",
+    category: "Web, UI/UX",
+    img: "/images/p2.jpg",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Portfolio Website",
+    category: "Web Design",
+    img: "/images/p3.jpg",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Mobile Banking App",
+    category: "Apps, UI/UX",
+    img: "/images/p4.jpg",
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Crypto Dashboard",
+    category: "Apps, Finance",
+    img: "/images/p1.jpg",
+    link: "#",
+  },
+  {
+    id: 6,
+    title: "AI Landing Page",
+    category: "Web, UI/UX",
+    img: "/images/p2.jpg",
+    link: "#",
+  },
+  {
+    id: 7,
+    title: "Task Manager App",
+    category: "Apps, Productivity",
+    img: "/images/p3.jpg",
+    link: "#",
+  },
+  {
+    id: 8,
+    title: "Restaurant Website",
+    category: "Web, Food",
+    img: "/images/p4.jpg",
+    link: "#",
+  },
+  {
+    id: 9,
+    title: "Travel Booking App",
+    category: "Apps, UI/UX",
+    img: "/images/p1.jpg",
+    link: "#",
+  },
+//   {
+//     id: 10,
+//     title: "Education Dashboard",
+//     category: "Web, EdTech",
+//     img: "/images/p10.jpg",
+//     link: "#",
+//   },
+];
 
 const Projects = () => {
   return (
-    <div className=' pt-16 pb-16'>
-      <h1 className=' text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white'>
-        A small selection of recent <br /> 
-        <span className=' text-cyan-300'>projects</span>
+    <div className="pt-16 pb-16 px-4">
+      <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
+        A small selection of recent <br />
+        <span className="text-cyan-300">projects</span>
       </h1>
-      <div className=' w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16'>
-        {/* 1st project*/}
-        <div className="bg-white rounded-xl shadow-md overflow-hidden p-4 max-w-sm">
-  {/* Project Image */}
-  <Image
-    src="/images/p1.jpg"
-    alt="Modern Finance Dashboard UI"
-    width={800}
-    height={650}
-    className="rounded-lg"
-  />
 
-  {/* Project Info */}
-  <div className="mt-4">
-    <h1 className="text-lg sm:text-xl font-semibold text-gray-900">
-      Modern Finance Dashboard UI
-    </h1>
-    <p className="mt-2 text-gray-600">Apps , UI/UX</p>
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+          >
+            {/* Image */}
+            <div className="relative h-52 md:h-64 w-full">
+              <Image
+                src={project.img}
+                alt={project.title}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-t-2xl"
+              />
+            </div>
 
-    {/* Demo Link */}
-    <a
-      href="#"
-      className="inline-block mt-3 text-indigo-600 font-medium hover:underline"
-    >
-      Demo →
-    </a>
-  </div>
-</div>
-<div className="bg-white rounded-xl shadow-md overflow-hidden p-4 max-w-sm">
-  {/* Project Image */}
-  <Image
-    src="/images/p2.jpg"
-    alt="Modern Finance Dashboard UI"
-    width={800}
-    height={650}
-    className="rounded-lg"
-  />
+            {/* Info */}
+            <div className="p-5">
+              <h2 className="text-lg md:text-xl font-semibold text-white">
+                {project.title}
+              </h2>
+              <p className="mt-2 text-white/80">{project.category}</p>
 
-  {/* Project Info */}
-  <div className="mt-4">
-    <h1 className="text-lg sm:text-xl font-semibold text-gray-900">
-      Modern Finance Dashboard UI
-    </h1>
-    <p className="mt-2 text-gray-600">Apps , UI/UX</p>
+              {/* Demo Link */}
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 text-indigo-400 font-medium hover:underline"
+              >
+                Demo →
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
 
-    {/* Demo Link */}
-    <a
-      href="#"
-      className="inline-block mt-3 text-indigo-600 font-medium hover:underline"
-    >
-      Demo →
-    </a>
-  </div>
-</div>
-<div className="bg-white rounded-xl shadow-md overflow-hidden p-4 max-w-sm">
-  {/* Project Image */}
-  <Image
-    src="/images/p3.jpg"
-    alt="Modern Finance Dashboard UI"
-    width={800}
-    height={650}
-    className="rounded-lg"
-  />
-
-  {/* Project Info */}
-  <div className="mt-4">
-    <h1 className="text-lg sm:text-xl font-semibold text-gray-900">
-      Modern Finance Dashboard UI
-    </h1>
-    <p className="mt-2 text-gray-600">Apps , UI/UX</p>
-
-    {/* Demo Link */}
-    <a
-      href="#"
-      className="inline-block mt-3 text-indigo-600 font-medium hover:underline"
-    >
-      Demo →
-    </a>
-  </div>
-</div>
-<div className="bg-white rounded-xl shadow-md overflow-hidden p-4 max-w-sm">
-  {/* Project Image */}
-  <Image
-    src="/images/p4.jpg"
-    alt="Modern Finance Dashboard UI"
-    width={800}
-    height={650}
-    className="rounded-lg"
-  />
-
-  {/* Project Info */}
-  <div className="mt-4">
-    <h1 className="text-lg sm:text-xl font-semibold text-gray-900">
-      Modern Finance Dashboard UI
-    </h1>
-    <p className="mt-2 text-gray-600">Apps , UI/UX</p>
-
-    {/* Demo Link */}
-    <a
-      href="#"
-      className="inline-block mt-3 text-indigo-600 font-medium hover:underline"
-    >
-      Demo →
-    </a>
-  </div>
-</div>
-
+      {/* Show More Button (GitHub link) */}
+      <div className="flex justify-center mt-12">
+        <a
+          href="https://github.com/zayaaan-al?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300
+        cursor-pointer rounded-full text-lg font-medium text-white"
+        >
+          Show More →
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
