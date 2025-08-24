@@ -65,13 +65,6 @@ const projects = [
     img: "/images/p1.jpg",
     link: "#",
   },
-//   {
-//     id: 10,
-//     title: "Education Dashboard",
-//     category: "Web, EdTech",
-//     img: "/images/p10.jpg",
-//     link: "#",
-//   },
 ];
 
 const Projects = () => {
@@ -93,9 +86,11 @@ const Projects = () => {
               <Image
                 src={project.img}
                 alt={project.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-t-2xl"
+                fill
+                sizes="(max-width: 768px) 100vw, 
+                       (max-width: 1200px) 50vw, 
+                       33vw"
+                className="object-cover rounded-t-2xl"
               />
             </div>
 
@@ -120,7 +115,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Show More Button (GitHub link) */}
+      {/* Show More Button */}
       <div className="flex justify-center mt-12">
         <a
           href="https://github.com/zayaaan-al?tab=repositories"
