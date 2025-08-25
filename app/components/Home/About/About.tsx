@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ParticlesHero from "../Hero/PartcleBackground";
+
 
 const AboutMe: React.FC = () => {
   return (

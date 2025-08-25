@@ -4,7 +4,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
-import ParticlesHero from "./PartcleBackground";
+import ParticlesHero from "../../PartcleBackground";
 
 const Hero = () => {
   return (

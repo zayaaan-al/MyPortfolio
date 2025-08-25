@@ -83,7 +83,7 @@ export default function ParticlesHero() {
       id="tsparticles"
       particlesLoaded={particlesLoaded}
       options={options}
-      className="absolute inset-0 "
+      className="fixed inset-0 -z-10 "
     />
   );
 }
