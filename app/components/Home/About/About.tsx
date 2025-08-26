@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Tilt from 'react-parallax-tilt'
 
 
 const AboutMe: React.FC = () => {
@@ -33,7 +34,7 @@ const AboutMe: React.FC = () => {
         >
          
           <div className="absolute -inset-4 bg-indigo-500/30 rounded-3xl blur-3xl animate-pulse"></div>
-
+         <Tilt >
           <Image
             src="/images/zayan.png"
             alt="User Image"
@@ -41,6 +42,7 @@ const AboutMe: React.FC = () => {
             height={480}
             className="relative rounded-3xl object-cover shadow-2xl border-2 border-gray-700"
           />
+          </Tilt>
         </motion.div>
 
         
