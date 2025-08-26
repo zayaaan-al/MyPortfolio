@@ -79,7 +79,7 @@ const Skills = () => {
           transitionSpeed={400}
           className="w-full"
         >
-          <div className="bg-white/5 backdrop-blur-lg text-center 
+          <div className=" bg-blue-950/20 backdrop-blur-lg text-center 
             rounded-2xl flex flex-col items-center justify-center aspect-square 
             shadow-lg shadow-purple-900/30 transition-transform duration-300 
             hover:scale-110 hover:shadow-cyan-400/40 border border-white/10 p-6">
