@@ -16,43 +16,90 @@ const Contact = () => {
     your goals.
   </p>
 
-  {/* info */}
   <div className="mt-8 space-y-5">
-    <div className="flex items-center space-x-3">
-      <BiPhone className="w-7 h-7 sm:w-9 sm:h-9 text-cyan-300" />
-      <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-400">
-        +91 8089271156
-      </p>
-    </div>
-    <div className="flex items-center space-x-3">
-      <BiEnvelope className="w-7 h-7 sm:w-9 sm:h-9 text-cyan-300" />
-      <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-400 break-all">
-        alzayanpoothakkal1156@gmail.com
-      </p>
-    </div>
-    <div className="flex items-center space-x-3">
-      <BiMap className="w-7 h-7 sm:w-9 sm:h-9 text-cyan-300" />
-      <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-400">
-        Pathappiriyam, Malappuram , 676123 - Kerala
-      </p>
-    </div>
-  </div>
+  {/* Phone */}
+  <a
+    href="tel:+918089271156"
+    className="flex items-center space-x-3 hover:text-cyan-300 transition"
+  >
+    <BiPhone className="w-7 h-7 sm:w-9 sm:h-9 text-cyan-300" />
+    <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-400">
+      +91 8089271156
+    </p>
+  </a>
 
-  {/* social icons */}
-  <div className="flex mt-8 space-x-4 sm:space-x-6">
-    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer hover:bg-black transition-all duration-300">
-      <FaGithub className="text-white w-6 h-6" />
-    </div>
-    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-900 transition-all duration-300">
-      <FaLinkedin className="text-white w-6 h-6" />
-    </div>
-    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer hover:bg-green-500 transition-all duration-300">
-      <FaWhatsapp className="text-white w-6 h-6" />
-    </div>
-    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-950/60 rounded-full flex items-center justify-center cursor-pointer hover:bg-pink-500 transition-all duration-300">
-      <FaInstagram className="text-white w-6 h-6" />
-    </div>
-  </div>
+  {/* Email */}
+  <a
+    href="mailto:alzayanpoothakkal1156@gmail.com"
+    className="flex items-center space-x-3 hover:text-cyan-300 transition"
+  >
+    <BiEnvelope className="w-7 h-7 sm:w-9 sm:h-9 text-cyan-300" />
+    <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-400 break-all">
+      alzayanpoothakkal1156@gmail.com
+    </p>
+  </a>
+
+  {/* Address */}
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Pathappiriyam,+Malappuram,+676123,+Kerala"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center space-x-3 hover:text-cyan-300 transition"
+  >
+    <BiMap className="w-7 h-7 sm:w-9 sm:h-9 text-cyan-300" />
+    <p className="text-base sm:text-lg md:text-xl font-semibold text-gray-400">
+      Pathappiriyam, Malappuram , 676123 - Kerala
+    </p>
+  </a>
+</div>
+
+{/* social icons */}
+<div className="flex mt-8 space-x-4 sm:space-x-6">
+  {/* GitHub */}
+  <a
+    href="https://github.com/zayaaan-al"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+    className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-950/60 rounded-full flex items-center justify-center hover:bg-black transition-all duration-300"
+  >
+    <FaGithub className="text-white w-6 h-6" />
+  </a>
+
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/in/zayaaan-al/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-950/60 rounded-full flex items-center justify-center hover:bg-blue-900 transition-all duration-300"
+  >
+    <FaLinkedin className="text-white w-6 h-6" />
+  </a>
+
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/918089271156"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+    className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-950/60 rounded-full flex items-center justify-center hover:bg-green-500 transition-all duration-300"
+  >
+    <FaWhatsapp className="text-white w-6 h-6" />
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/zayaaan.al/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-950/60 rounded-full flex items-center justify-center hover:bg-pink-500 transition-all duration-300"
+  >
+    <FaInstagram className="text-white w-6 h-6" />
+  </a>
+</div>
+
 </div>
 
 
