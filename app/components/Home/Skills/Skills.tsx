@@ -33,7 +33,7 @@ const skills =[
      {
         name :'Python',
         icon: <SiPython/>,
-        percentage : 90, 
+        percentage : 70, 
     },
      {
         name :'Node.js',
