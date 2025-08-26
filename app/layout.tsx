@@ -4,6 +4,7 @@ import "./globals.css";
 import ResponsiveNav from "./components/Home/Navbar/ResponsiveNav";
 import ParticlesHero from "./components/PartcleBackground"; // import your particles component
 import Footer from "./components/Home/Footer/Footer";
+import ScrollToTop from "./components/Helper/ScrollToTop";
 
 const font = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -32,6 +33,7 @@ export default function RootLayout({
         {/* Main content above particles */}
         <main className="relative z-10">{children}
           <Footer/>
+          <ScrollToTop/>
         </main>
       </body>
     </html>
