@@ -20,10 +20,11 @@ const Hero = () => {
           width={150}
           height={150}
           className="rounded-full border-8 border-[#0c0c48aa]"
+          data-aos="fade-up"
         />
 
         {/* Social Icons (horizontal row under image) */}
-        <div className="mt-6 flex flex-row items-center gap-6">
+        <div data-aos="fade-up" data-aos-delay="200" className="mt-6 flex flex-row items-center gap-6">
           <a
             href="https://github.com/zayaaan-al"
             target="_blank"
@@ -57,12 +58,12 @@ const Hero = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 font-bold tracking-wide">
+        <h1 data-aos="fade-up" data-aos-delay="400" className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 font-bold tracking-wide">
           Full Stack <span className="text-cyan-200">Developer</span>
         </h1>
 
         {/* Typewriter Text */}
-        <h2 className="mt-5 text-sm sm:text-lg md:text-2xl font-medium flex flex-wrap justify-center">
+        <h2 data-aos="fade-up" data-aos-delay="600" className="mt-5 text-sm sm:text-lg md:text-2xl font-medium flex flex-wrap justify-center">
           Hi! I'm Zayan - A Passionate
           <span className="text-cyan-200 font-bold">
             <Typewriter
@@ -86,6 +87,7 @@ const Hero = () => {
         <button
           className="mt-6 px-8 py-3 bg-blue-800 hover:bg-blue-900 transition-all duration-300
           cursor-pointer rounded-full text-base sm:text-lg font-medium flex items-center gap-2"
+        data-aos="fade-up" data-aos-delay="800"
         >
           <span>See my work</span>
           <BsArrowRight className="w-5 h-5" />

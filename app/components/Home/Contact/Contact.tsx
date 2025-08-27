@@ -104,7 +104,9 @@ const Contact = () => {
 
 
         {/* form */}
-        <div className="p-5 sm:p-8 md:p-10 bg-[#131332] rounded-xl shadow-lg">
+        <div data-aos="zoom-in"
+        data-aos-anchor-placement="top-center"
+        data-aos-delay="0" className="p-5 sm:p-8 md:p-10 bg-[#131332] rounded-xl shadow-lg">
           <input
             type="text"
             placeholder="Name"

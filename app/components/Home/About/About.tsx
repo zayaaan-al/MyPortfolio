@@ -10,9 +10,7 @@ const AboutMe: React.FC = () => {
     <section className="relative py-20 bg-transparent">
       {/* Section Heading */}
       <motion.h1
-        initial={{ opacity: 0, y: -30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
+        
         className="text-center text-3xl md:text-5xl font-extrabold text-white tracking-wide"
       >
         About{" "}

@@ -76,13 +76,15 @@ const Projects = () => {
       </h1>
 
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-        {projects.map((project) => (
+        {projects.map((project,i) => (
           <div
+          data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay={i*100}
             key={project.id}
             className="rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
           >
             {/* Image */}
-            <div className="relative h-52 md:h-64 w-full">
+            <div className="relative h-52 md:h-64 w-full" 
+            >
               <Image
                 src={project.img}
                 alt={project.title}
@@ -95,7 +97,7 @@ const Projects = () => {
             </div>
 
             {/* Info */}
-            <div className="p-5">
+            <div className="p-5" >
               <h2 className="text-lg md:text-xl font-semibold text-white">
                 {project.title}
               </h2>

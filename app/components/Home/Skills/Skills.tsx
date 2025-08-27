@@ -72,14 +72,14 @@ const Skills = () => {
   {/* Skills Grid */}
   <div className="flex justify-center mt-16">
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 max-w-6xl w-full">
-      {skills.map((skill) => (
+      {skills.map((skill,i) => (
         <Tilt
           key={skill.name}
           scale={1.05}
           transitionSpeed={400}
           className="w-full"
         >
-          <div className=" bg-blue-950/20 backdrop-blur-lg text-center 
+          <div data-aos="flip-right" data-aos-anchor-placement="top-center" data-aos-delay={i*100} className=" bg-blue-950/20 backdrop-blur-lg text-center 
             rounded-2xl flex flex-col items-center justify-center aspect-square 
             shadow-lg shadow-purple-900/30 transition-transform duration-300 
             hover:scale-110 hover:shadow-cyan-400/40 border border-white/10 p-6">

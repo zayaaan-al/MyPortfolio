@@ -13,7 +13,7 @@ const Services = () => {
       </h1>
 
       {/* Services Grid */}
-      <div className="mt-16 w-[90%] sm:w-[80%] lg:w-[75%] mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
+      <div data-aos="fade-right" data-aos-anchor-placement="top-center" className="mt-16 w-[90%] sm:w-[80%] lg:w-[75%] mx-auto grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
         <ServiceCard
           icon="/images/s1.png"
           name="Frontend Development"
