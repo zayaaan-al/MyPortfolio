@@ -64,7 +64,7 @@ const Hero = () => {
 
         {/* Typewriter Text */}
         <h2 data-aos="fade-up" data-aos-delay="600" className="mt-5 text-sm sm:text-lg md:text-2xl font-medium flex flex-wrap justify-center">
-          Hi! I'm Zayan - A Passionate
+         Hello, I&apos;m Zayaan - A Passionate
           <span className="text-cyan-200 font-bold">
             <Typewriter
               options={{
