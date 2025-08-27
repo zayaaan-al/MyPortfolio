@@ -9,15 +9,12 @@ const AboutMe: React.FC = () => {
   return (
     <section className="relative py-20 bg-transparent">
       {/* Section Heading */}
-      <motion.h1
-        
-        className="text-center text-3xl md:text-5xl font-extrabold text-white tracking-wide"
-      >
+      <h1 className="text-center text-3xl md:text-5xl font-extrabold text-white tracking-wide">
         About{" "}
         <span className="bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
           Me
         </span>
-      </motion.h1>
+      </h1>
 
       {/* Content Wrapper */}
       <motion.div
@@ -40,7 +37,7 @@ const AboutMe: React.FC = () => {
               alt="Zayan"
               width={400}
               height={480}
-              priority  
+              priority
               className="relative rounded-3xl object-cover shadow-2xl border border-white/10"
             />
           </Tilt>
@@ -64,8 +61,8 @@ const AboutMe: React.FC = () => {
             </span>{" "}
             with hands-on experience in the{" "}
             <span className="text-indigo-300">MERN</span> and{" "}
-            <span className="text-purple-300">Django</span> ,
-            specializing in building{" "}
+            <span className="text-purple-300">Django</span>, specializing in
+            building{" "}
             <span className="text-cyan-300">responsive</span>,{" "}
             <span className="text-cyan-300">dynamic</span>, and{" "}
             <span className="text-cyan-300">user-friendly</span> web
