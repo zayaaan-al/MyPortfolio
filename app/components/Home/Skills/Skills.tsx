@@ -60,7 +60,7 @@ const skills =[
 
 const Skills = () => {
   return (
-    <div className="text-white py-20 px-6">
+    <div id='skills' className="text-white py-20 px-6">
   {/* Section Heading */}
   <div className="text-center">
     <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold">

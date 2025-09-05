@@ -7,7 +7,7 @@ import Tilt from "react-parallax-tilt";
 
 const AboutMe: React.FC = () => {
   return (
-    <section className="relative py-20 bg-transparent">
+    <section id="about" className="relative py-20 bg-transparent">
       {/* Section Heading */}
       <h1 className="text-center text-3xl md:text-5xl font-extrabold text-white tracking-wide">
         About{" "}
