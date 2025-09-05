@@ -6,6 +6,7 @@ import ParticlesHero from "./components/PartcleBackground"; // import your parti
 import Footer from "./components/Home/Footer/Footer";
 import ScrollToTop from "./components/Helper/ScrollToTop";
 
+
 const font = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -14,6 +15,9 @@ const font = Inter({
 export const metadata: Metadata = {
   title: "AL ZAYAN",
   description: "Full Stack Developer | Mern | Django",
+  icons: {
+    icon: "/zayan.jpg", // ✅ path inside public/
+  },
 };
 
 export default function RootLayout({
