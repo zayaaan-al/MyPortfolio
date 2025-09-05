@@ -19,6 +19,7 @@ const Hero = () => {
           alt="heroimage"
           width={150}
           height={150}
+          priority
           className="rounded-full border-8 border-[#0c0c48aa]"
           data-aos="fade-up"
         />
