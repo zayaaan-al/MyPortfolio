@@ -85,7 +85,7 @@ const AboutMe: React.FC = () => {
           {/* Resume Button */}
           <motion.a
             href="/resume.pdf"
-            download
+            download ="Zayan_Resume.pdf"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block px-8 py-3 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold shadow-lg transition-all"
