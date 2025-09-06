@@ -4,64 +4,64 @@ import React from "react";
 const projects = [
   {
     id: 1,
-    title: "Modern Finance Dashboard UI",
-    category: "Apps, UI/UX",
+    title: "ShopeEase",
+    repolink: "https://github.com/zayaaan-al/ShopEase.git",
     img: "/images/Shopease.png",
     link: "https://zayaaan-al.github.io/ShopEase/",
   },
   {
     id: 2,
-    title: "E-Commerce Website",
-    category: "Web, UI/UX",
+    title: "Weather App",
+    repolink: "https://github.com/zayaaan-al/Weather-App.git",
     img: "/images/weatherapp.png",
     link: "https://weather-app-pi-wheat-66.vercel.app/",
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    category: "Web Design",
+    title: "ToDo List",
+    repolink: "https://github.com/zayaaan-al/todo.git",
     img: "/images/todoapp.png",
     link: "https://zayaanaltodoapp.netlify.app/",
   },
   {
     id: 4,
-    title: "Mobile Banking App",
-    category: "Apps, UI/UX",
+    title: "Calculator",
+    repolink: "https://github.com/zayaaan-al/calculator.git",
     img: "/images/calculator.png",
     link: "https://zayaaan-al.github.io/calculator/",
   },
   {
     id: 5,
-    title: "Crypto Dashboard",
-    category: "Apps, Finance",
+    title: "Quize App",
+    repolink: "https://github.com/zayaaan-al/Quiz-App.git",
     img: "/images/quizeapp.png",
     link: " https://zayaaan-al.github.io/Quiz-App/",
   },
   {
     id: 6,
-    title: "AI Landing Page",
-    category: "Web, UI/UX",
+    title: "Bird Game",
+    repolink: "https://github.com/zayaaan-al/Bird-Game.git",
     img: "/images/birdgame.png",
     link: "https://zayaaan-al.github.io/Bird-Game/",
   },
   {
     id: 7,
-    title: "Task Manager App",
-    category: "Apps, Productivity",
+    title: "Allensolly Clone",
+    repolink: "https://github.com/zayaaan-al/allensolly.git",
     img: "/images/allensolly.png",
     link: "https://zayaaan-al.github.io/allensolly/",
   },
   {
     id: 8,
-    title: "Restaurant Website",
-    category: "Web, Food",
+    title: "Starbucks Clone",
+    repolink: "https://github.com/zayaaan-al/starbucks.git",
     img: "/images/starbucks.png",
     link: "https://zayaaan-al.github.io/starbucks/",
   },
   {
     id: 9,
-    title: "Travel Booking App",
-    category: "Apps, UI/UX",
+    title: "Airbnb Clone",
+    repolink: "https://github.com/zayaaan-al/airbnb.git",
     img: "/images/airbnd.png",
     link: "https://zayaaan-al.github.io/airbnb/",
   },
@@ -101,8 +101,15 @@ const Projects = () => {
               <h2 className="text-lg md:text-xl font-semibold text-white">
                 {project.title}
               </h2>
-              <p className="mt-2 text-white/80">{project.category}</p>
-
+              {/* <p className="mt-2 text-white/80">{project.category}</p> */}
+              <div><a
+                href={project.repolink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block  mt-3 text-white/80 font-medium hover:underline"
+              >
+                Repo →
+              </a></div>
               {/* Demo Link */}
               <a
                 href={project.link}
