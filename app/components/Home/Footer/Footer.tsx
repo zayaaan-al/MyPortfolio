@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <h1 className="text-2xl font-bold text-white mb-4">Al Zayan</h1>
           <p className="text-gray-400 leading-relaxed">
-            Building modern web experiences with React, Next.js, and Tailwind. 🚀
+            Building modern web experiences with Mern, Django. 🚀
           </p>
         </div>
 
