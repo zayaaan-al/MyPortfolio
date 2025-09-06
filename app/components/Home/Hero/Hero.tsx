@@ -86,6 +86,9 @@ const Hero = () => {
 
         {/* Button */}
         <button
+        onClick={()=>{
+          document.getElementById("works")?.scrollIntoView({behavior:"smooth"});
+        }}
           className="mt-6 px-8 py-3 bg-blue-800 hover:bg-blue-900 transition-all duration-300
           cursor-pointer rounded-full text-base sm:text-lg font-medium flex items-center gap-2"
         data-aos="fade-up" data-aos-delay="800"
