@@ -102,14 +102,14 @@ const Projects = () => {
                 {project.title}
               </h2>
               {/* <p className="mt-2 text-white/80">{project.category}</p> */}
-              <div><a
+              {/* <div><a
                 href={project.repolink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block  mt-3 text-white/80 font-medium hover:underline"
               >
                 Repo →
-              </a></div>
+              </a></div> */}
               {/* Demo Link */}
               <a
                 href={project.link}
