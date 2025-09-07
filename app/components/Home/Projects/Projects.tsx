@@ -72,7 +72,7 @@ const Projects = () => {
     <div id="works" className="pt-16 pb-16 px-4">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
         A small selection of recent <br />
-        <span className="text-cyan-300">projects</span>
+        <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">projects</span>
       </h1>
 
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">

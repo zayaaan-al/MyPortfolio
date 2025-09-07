@@ -130,7 +130,7 @@ const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
           />
           <button
             type="submit"
-            className="mt-7 px-8 py-3.5 bg-blue-950 hover:bg-blue-900 transition-all text-white rounded-full w-full sm:w-auto"
+            className="mt-7 px-8 py-3.5 font-bold bg-blue-950 hover:bg-blue-900 transition-all text-white rounded-full w-full sm:w-auto"
           >
             Send Message
           </button>

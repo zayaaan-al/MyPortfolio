@@ -60,13 +60,13 @@ const Hero = () => {
 
         {/* Heading */}
         <h1 data-aos="fade-up" data-aos-delay="400" className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 font-bold tracking-wide">
-          Full Stack <span className="text-cyan-200">Developer</span>
+          Full Stack <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Developer</span>
         </h1>
 
         {/* Typewriter Text */}
         <h2 data-aos="fade-up" data-aos-delay="600" className="mt-5 text-sm sm:text-lg md:text-2xl font-medium flex flex-wrap justify-center">
          Hello, I&apos;m Zayan - A Passionate
-          <span className="text-cyan-200 font-bold">
+          <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent font-bold">
             <Typewriter
               options={{
                 strings: [
