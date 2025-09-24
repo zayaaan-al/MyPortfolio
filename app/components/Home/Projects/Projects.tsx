@@ -53,10 +53,10 @@ const projects = [
   },
   {
     id: 8,
-    title: "Starbucks Clone",
-    repolink: "https://github.com/zayaaan-al/starbucks.git",
-    img: "/images/starbucks.png",
-    link: "https://zayaaan-al.github.io/starbucks/",
+    title: "Skedara",
+    repolink: "https://github.com/zayaaan-al/Skedara.git",
+    img: "/images/Skedara.png",
+    link: "https://skedaraclone.netlify.app/",
   },
   {
     id: 9,
